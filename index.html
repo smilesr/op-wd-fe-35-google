@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <script src="https://use.fontawesome.com/3704ac60db.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%; 
+      }
+      body {
+        padding-top: 2.5rem;
+        font-size: 1.75rem;
+        color: #737373;
+        font-family: arial, sans-serif;   
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      a:hover {
+       text-decoration: underline;
+      }
+
+      /*TOP CONTAINER */
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex: 0 1 10%;
+       }
+      div.button-group button {
+       font-family: inherit;
+       font-size: inherit;
+       }
+      .flex-ul-container {
+        justify-content: space-between;
+        display: flex;
+        list-style: none;
+        align-items: baseline;
+        margin-right: 3rem;
+      }
+      .flex-ul-container li {
+        margin-left: 15px;
+      }
+      .flex-ul-container li:nth-child(3){
+        font-size: 3rem;
+      }
+      .flex-ul-container li:nth-child(3):hover{
+        color: #262626;
+      }
+      .flex-ul-container li:last-child {
+        color: white;
+        padding: 0.8rem;
+        background-color: #3399ff;
+        border-radius: 0.3rem;
+      }
+
+      /*MIDDLE CONTAINER */
+      .middle-container {
+        min-height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .middle-container > * {
+        margin: 1.5rem;
+      }
+      .middle-container img {
+        flex-basis: 100%;
+      }
+      .middle-container form {
+        flex-basis: 100%; 
+      }
+      .middle-container button {
+        flex-basis: 50%;
+        color: inherit;
+        background-color: #f2f2f2;
+        border: 1px solid #f2f2f2;
+        font-weight: bold;
+        padding: 1.0rem;
+        border-radius: 0.3rem;
+      }
+      .middle-container button:hover {
+        border: 1px solid #cccccc;
+      }
+      input {
+        font-size: 2rem;
+        min-height: 4rem;
+        width: 50rem;
+        border: 1px solid blue;
+        padding-left: 2rem;
+      }
+
+      /*BOTTOM CONTAINER */
+      .footer-container {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        list-style: none;
+        background:rgba(0,0,0,0.1);
+      }
+      .right-side {
+        display: flex;
+        flex-basis: 15%;
+        justify-content: space-around;
+        padding-left: 3rem;
+      }
+      .right-side li {
+        border-right: 3rem solid transparent;
+      }
+      .left-side li {
+        border-left: 3rem solid transparent;
+      }
+      .mid-side{
+        flex-basis: 70%;
+      }
+      .left-side {
+        display: flex;
+        flex-basis: 15%;
+        justify-content: space-around;
+        padding-right: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="flex-container">
+        <ul class="flex-ul-container">
+          <li class="flex-item"><a href="#">
+            Gmail</a>
+          </li>
+          <li class="flex-item"><a href="#">
+            Images</a>
+          </li>
+          <li class="flex-item">
+            <i class="fa fa-th" aria-hidden="true"></i>
+          </li>
+          <li class="flex-item">
+            Sign In
+          </li>
+        </ul>    
+      </header>
+      <article id="middle-area">
+        <div class="middle-container">
+          <img height="92" width="272" src="googlelogo_color_272x92dp.png" id="image">
+          <form action="#" method="get" id="search-bar" >
+            <input type="text" class="middle-items">
+          </form>
+          <div class="button-group">
+            <button> Google Search </button>
+            <button> I'm Feeling Lucky </button>
+          </div>
+        </div>
+      </article>
+      <footer>
+        <ul class="footer-container">
+          <div class="right-side">
+            <li class="flex-item"><a href="#">Advertising</a></li>
+            <li class="flex-item"><a href="#">Business</a></li>
+            <li class="flex-item"><a href="#">About</a></li>
+          </div>
+
+          <div class="mid-side">
+          </div>
+          <div class="left-side">
+            <li class="flex-item"><a href="#">Privacy</a></li>
+            <li class="flex-item"><a href="#">Terms</a></li>
+            <li class="flex-item"><a href="#">Settings</a></li>
+          </div>
+        </ul>
+      </footer>
+    </div>
+
+  </body>
+</html>
